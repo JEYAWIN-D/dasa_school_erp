@@ -1,0 +1,166 @@
+{
+    "timestamp": "2026-11-09 23:50:11",
+    "endpoints": {
+        "\/": {
+            "uri": "\/",
+            "status": 200,
+            "duration_ms": 260.8,
+            "result": "PASS",
+            "error": null
+        },
+        "\/login": {
+            "uri": "\/login",
+            "status": 200,
+            "duration_ms": 22.03,
+            "result": "PASS",
+            "error": null
+        },
+        "\/up": {
+            "uri": "\/up",
+            "status": 200,
+            "duration_ms": 681.5,
+            "result": "PASS",
+            "error": null
+        },
+        "\/dashboard": {
+            "uri": "\/dashboard",
+            "unauth_status": 302,
+            "unauth_check": "PASS",
+            "admin_status": 200,
+            "admin_duration_ms": 13648.09,
+            "admin_result": "PASS",
+            "error": null
+        },
+        "\/students": {
+            "uri": "\/students",
+            "unauth_status": 302,
+            "unauth_check": "PASS",
+            "admin_status": 200,
+            "admin_duration_ms": 19420.95,
+            "admin_result": "PASS",
+            "error": null
+        },
+        "\/academics": {
+            "uri": "\/academics",
+            "unauth_status": 302,
+            "unauth_check": "PASS",
+            "admin_status": 200,
+            "admin_duration_ms": 3256.42,
+            "admin_result": "PASS",
+            "error": null
+        },
+        "\/hr": {
+            "uri": "\/hr",
+            "unauth_status": 302,
+            "unauth_check": "PASS",
+            "admin_status": 200,
+            "admin_duration_ms": 3770.4,
+            "admin_result": "PASS",
+            "error": null
+        },
+        "\/transport": {
+            "uri": "\/transport",
+            "unauth_status": 302,
+            "unauth_check": "PASS",
+            "admin_status": 200,
+            "admin_duration_ms": 8551.66,
+            "admin_result": "PASS",
+            "error": null
+        },
+        "\/fees": {
+            "uri": "\/fees",
+            "unauth_status": 302,
+            "unauth_check": "PASS",
+            "admin_status": 200,
+            "admin_duration_ms": 4335.04,
+            "admin_result": "PASS",
+            "error": null
+        },
+        "\/library": {
+            "uri": "\/library",
+            "unauth_status": 302,
+            "unauth_check": "PASS",
+            "admin_status": 200,
+            "admin_duration_ms": 14233.02,
+            "admin_result": "PASS",
+            "error": null
+        },
+        "\/examinations": {
+            "uri": "\/examinations",
+            "unauth_status": 302,
+            "unauth_check": "PASS",
+            "admin_status": 200,
+            "admin_duration_ms": 2303.85,
+            "admin_result": "PASS",
+            "error": null
+        },
+        "\/hostel": {
+            "uri": "\/hostel",
+            "unauth_status": 302,
+            "unauth_check": "PASS",
+            "admin_status": 302,
+            "admin_duration_ms": 22.38,
+            "admin_result": "FAIL",
+            "error": null
+        },
+        "\/warehouse": {
+            "uri": "\/warehouse",
+            "unauth_status": 302,
+            "unauth_check": "PASS",
+            "admin_status": 200,
+            "admin_duration_ms": 4976.81,
+            "admin_result": "PASS",
+            "error": null
+        },
+        "\/gate": {
+            "uri": "\/gate",
+            "unauth_status": 302,
+            "unauth_check": "PASS",
+            "admin_status": 200,
+            "admin_duration_ms": 3525.47,
+            "admin_result": "PASS",
+            "error": null
+        },
+        "\/rbac": {
+            "uri": "\/rbac",
+            "unauth_status": 404,
+            "unauth_check": "FAIL",
+            "admin_status": 404,
+            "admin_duration_ms": 559.5,
+            "admin_result": "FAIL",
+            "error": null
+        },
+        "\/admissions": {
+            "uri": "\/admissions",
+            "unauth_status": 302,
+            "unauth_check": "PASS",
+            "admin_status": 200,
+            "admin_duration_ms": 6756.43,
+            "admin_result": "PASS",
+            "error": null
+        },
+        "\/communication": {
+            "uri": "\/communication",
+            "unauth_status": 302,
+            "unauth_check": "PASS",
+            "admin_status": 302,
+            "admin_duration_ms": 14.19,
+            "admin_result": "FAIL",
+            "error": null
+        },
+        "\/reports": {
+            "uri": "\/reports",
+            "unauth_status": 302,
+            "unauth_check": "PASS",
+            "admin_status": 200,
+            "admin_duration_ms": 7199.54,
+            "admin_result": "PASS",
+            "error": null
+        }
+    },
+    "summary": {
+        "total": 33,
+        "passed": 29,
+        "failed": 4
+    }
+}

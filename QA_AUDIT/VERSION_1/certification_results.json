@@ -1,0 +1,122 @@
+{
+    "TC-CERT-001": {
+        "title": "Settings Vertical Privilege Escalation Defense (BUG-SEC-001)",
+        "category": "Security",
+        "status": "PASS",
+        "metric": "HTTP 403 (Expected 403 Forbidden)"
+    },
+    "TC-CERT-002": {
+        "title": "Circular Stored XSS Neutralization (BUG-SEC-002)",
+        "category": "Security",
+        "status": "PASS",
+        "metric": "Scripts & on* event handlers completely stripped"
+    },
+    "TC-CERT-003": {
+        "title": "Windows Shell Command Credential Decoupling (BUG-SEC-003)",
+        "category": "Security",
+        "status": "PASS",
+        "metric": "PGPASSWORD passed via environment putenv()"
+    },
+    "TC-CERT-004": {
+        "title": "Public Fee Checkout Route Rate Limiting (BUG-SEC-004)",
+        "category": "Security",
+        "status": "PASS",
+        "metric": "Route throttle:15,1 active"
+    },
+    "TC-CERT-005": {
+        "title": "Admissions Route Integer Constraint Resolution (BUG-FUNC-001)",
+        "category": "Functional",
+        "status": "PASS",
+        "metric": "HTTP 404 (Expected 404 cleanly, no 500 integer crash)"
+    },
+    "TC-CERT-006": {
+        "title": "Student Directory Query Consolidation (BUG-FUNC-002)",
+        "category": "Performance",
+        "status": "PASS",
+        "metric": "Single SELECT COUNT(*) FILTER + bulk enrollment eager load"
+    },
+    "TC-CERT-007": {
+        "title": "Calendar Conflict Detection Schema Resolution (BUG-API-001)",
+        "category": "API",
+        "status": "PASS",
+        "metric": "HTTP 200 (Expected 200 OK without 500 column missing crash)"
+    },
+    "TC-CERT-008": {
+        "title": "Allocation History Blade Syntax (BUG-UI-001)",
+        "category": "UI\/UX",
+        "status": "PASS",
+        "metric": "Blade template compiled cleanly without PHP parse error"
+    },
+    "TC-CERT-009": {
+        "title": "Teacher Timetable JSON Blade Directive (BUG-UI-002)",
+        "category": "UI\/UX",
+        "status": "PASS",
+        "metric": "Blade template compiled cleanly without PHP parse error"
+    },
+    "TC-CERT-010": {
+        "title": "Fee Reminder Blade Tokenizer Syntax (BUG-UI-003)",
+        "category": "UI\/UX",
+        "status": "PASS",
+        "metric": "Blade template compiled cleanly without PHP parse error"
+    },
+    "TC-CERT-011": {
+        "title": "HR Challan Loop Control Flow (BUG-UI-004)",
+        "category": "UI\/UX",
+        "status": "PASS",
+        "metric": "Blade template compiled cleanly without PHP parse error"
+    },
+    "TC-CERT-012": {
+        "title": "Notification Template Blade Syntax (BUG-UI-005)",
+        "category": "UI\/UX",
+        "status": "PASS",
+        "metric": "Blade template compiled cleanly without PHP parse error"
+    },
+    "TC-CERT-013": {
+        "title": "Admission Draft Idempotency Replay Guard (BUG-CHAOS-001)",
+        "category": "Reliability",
+        "status": "PASS",
+        "metric": "Exact draft_id reused (232 == 232)"
+    },
+    "TC-CERT-014": {
+        "title": "Enterprise Blade View Compilation & Linting",
+        "category": "UI\/UX",
+        "status": "PASS",
+        "metric": "584 \/ 584 views compiled with 0 PHP parse errors (100% clean)"
+    },
+    "TC-CERT-015": {
+        "title": "Complete Application Route Registration & Integrity",
+        "category": "Architecture",
+        "status": "PASS",
+        "metric": "1244 routes registered with zero action collisions or missing controllers"
+    },
+    "TC-CERT-016": {
+        "title": "PostgreSQL 18 Remote Schema & Migration Cohesion",
+        "category": "Database",
+        "status": "PASS",
+        "metric": "74 migration batches active on remote PostgreSQL 18.6 host"
+    },
+    "TC-CERT-017": {
+        "title": "Enquiry Management Action Synchronization & Modal Intake",
+        "category": "Functional",
+        "status": "PASS",
+        "metric": "Enquiry intake button and modal triggers synchronized across Admissions navigation"
+    },
+    "TC-CERT-018": {
+        "title": "Admission Draft Auto-Save Round-Trip & Data Recovery",
+        "category": "Functional",
+        "status": "PASS",
+        "metric": "Auto-save persisted and recovered draft without data loss"
+    },
+    "TC-CERT-019": {
+        "title": "Sibling Search & Discount Calculation Endpoint Cohesion",
+        "category": "Integration",
+        "status": "PASS",
+        "metric": "HTTP 200 (AJAX lookup endpoint responds cleanly)"
+    },
+    "TC-CERT-020": {
+        "title": "Application Core Security Configuration & Password Hashing",
+        "category": "Security",
+        "status": "PASS",
+        "metric": "APP_KEY securely generated (AES-256-CBC) | Hashing algorithm: bcrypt"
+    }
+}

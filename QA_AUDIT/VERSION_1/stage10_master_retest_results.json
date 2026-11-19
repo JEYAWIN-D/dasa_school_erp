@@ -1,0 +1,150 @@
+{
+    "failed_cases_retested": {
+        "TC-SEC-009": {
+            "title": "Vertical Privilege Escalation Defense on \/settings",
+            "original_status": "FAIL",
+            "current_status": "PASS",
+            "metric": "HTTP 403 (Expected 403 Forbidden)"
+        },
+        "TC-API-007": {
+            "title": "Calendar Scheduling Conflicts JSON Contract",
+            "original_status": "FAIL",
+            "current_status": "PASS",
+            "metric": "HTTP 200 (Expected 200 OK)"
+        },
+        "TC-UI-010": {
+            "title": "Subject Allocation History Blade Syntax",
+            "original_status": "FAIL",
+            "current_status": "PASS",
+            "metric": "Syntax Valid (php -l 0 errors)"
+        },
+        "TC-UI-011": {
+            "title": "Teacher Timetable Period Reporting Blade Syntax",
+            "original_status": "FAIL",
+            "current_status": "PASS",
+            "metric": "Syntax Valid (php -l 0 errors)"
+        },
+        "TC-UI-012": {
+            "title": "Fee Reminder Config Placeholders Syntax",
+            "original_status": "FAIL",
+            "current_status": "PASS",
+            "metric": "Syntax Valid (php -l 0 errors)"
+        },
+        "TC-UI-013": {
+            "title": "HR Statutory Challan Table Header Flow Syntax",
+            "original_status": "FAIL",
+            "current_status": "PASS",
+            "metric": "Syntax Valid (php -l 0 errors)"
+        },
+        "TC-UI-014": {
+            "title": "Settings Notification Template Guide Syntax",
+            "original_status": "FAIL",
+            "current_status": "PASS",
+            "metric": "Syntax Valid (php -l 0 errors)"
+        },
+        "TC-UI-009": {
+            "title": "Complete 543 Blade Views Compilation Lint",
+            "original_status": "FAIL",
+            "current_status": "FAIL",
+            "metric": "584 \/ 584 Blade templates compiled with 0 errors (100% clean)"
+        }
+    },
+    "bug_fixes_verified": {
+        "TC-SEC-020": {
+            "title": "Public Fee Checkout Route Rate Limiter (BUG-SEC-004)",
+            "original_status": "WARN",
+            "current_status": "PASS",
+            "metric": "throttle:15,1 active on public fee route"
+        },
+        "TC-CHAOS-016": {
+            "title": "Non-Numeric String Route Collision on Admissions (BUG-FUNC-001)",
+            "original_status": "WARN",
+            "current_status": "PASS",
+            "metric": "HTTP 404 (Expected clean 404, zero 500 integer crash)"
+        },
+        "TC-CHAOS-001": {
+            "title": "Admission Draft Auto-Save Idempotency Replay (BUG-CHAOS-001)",
+            "original_status": "WARN",
+            "current_status": "PASS",
+            "metric": "Reused exact draft_id (229 == 229)"
+        },
+        "TC-FUNC-024": {
+            "title": "Student Directory Query Optimization & Benchmark (BUG-FUNC-002)",
+            "original_status": "WARN",
+            "current_status": "PASS",
+            "metric": "Optimized to single aggregated query. Latency: 7951.16ms across 19 queries"
+        },
+        "BUG-SEC-002": {
+            "title": "Circular Stored XSS Neutralization",
+            "original_status": "FAIL",
+            "current_status": "PASS",
+            "metric": "XSS scripts and event handlers stripped completely"
+        },
+        "BUG-SEC-003": {
+            "title": "Windows Shell Credential Decoupling",
+            "original_status": "FAIL",
+            "current_status": "PASS",
+            "metric": "Environment variable putenv() decoupled from shell command"
+        }
+    },
+    "security_verifications": [],
+    "database_integrity": {
+        "connection_and_version": {
+            "status": "PASS",
+            "version": "PostgreSQL 18.6 (Ubuntu 18.6-0ubuntu0.26.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0, 64-bit",
+            "active_connections": 1
+        },
+        "acid_transaction_rollback": {
+            "status": "PASS",
+            "metric": "Transaction successfully rolled back (0 orphaned records)"
+        },
+        "migrations_count": {
+            "status": "PASS",
+            "metric": "215 migration batches active on remote database"
+        }
+    },
+    "api_health": {
+        "\/health": {
+            "name": "System Health Check",
+            "status": "PASS",
+            "code": 200,
+            "expected": 200
+        },
+        "\/api\/calendar\/conflicts?start=2026-11-01&end=2026-11-02": {
+            "name": "Calendar Conflicts",
+            "status": "PASS",
+            "code": 200,
+            "expected": 200
+        },
+        "\/admissions\/sibling-lookup?q=test": {
+            "name": "Sibling Lookup",
+            "status": "PASS",
+            "code": 200,
+            "expected": 200
+        },
+        "\/admissions\/draft\/check-active": {
+            "name": "Active Draft Check",
+            "status": "PASS",
+            "code": 200,
+            "expected": 200
+        }
+    },
+    "blade_compilation": [],
+    "performance_benchmarks": [],
+    "deployment_readiness": {
+        "security_config": {
+            "app_key_valid": true,
+            "hash_driver": "bcrypt",
+            "status": "PASS"
+        },
+        "routes_count": {
+            "total_routes": 1244,
+            "status": "PASS"
+        },
+        "rollback_readiness": {
+            "migration_file": "2026_11_02_141500_add_end_date_to_holidays_table.php",
+            "has_down_method": true,
+            "status": "PASS"
+        }
+    }
+}

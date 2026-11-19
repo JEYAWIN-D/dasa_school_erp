@@ -1,0 +1,64 @@
+endpoint_id,method,uri,route_name,middleware,expected_status,auth_required,permission,rate_limit,response_type,status
+EP-001,GET,/,home,web,200,No,none,none,text/html,ACTIVE
+EP-002,GET,/login,login,web,200,No,none,none,text/html,ACTIVE
+EP-003,POST,/login,login.post,web,302,No,none,5/min,redirect,ACTIVE
+EP-004,POST,/logout,logout,web,302,Yes,none,none,redirect,ACTIVE
+EP-005,GET,/health,health.check,web,200,No,none,none,application/json,ACTIVE
+EP-006,GET,/dashboard,dashboard,web;auth;staff.access,200,Yes,none,none,text/html,ACTIVE
+EP-007,GET,/admissions,admissions.index,web;auth;permission:view admissions,200,Yes,view admissions,none,text/html,ACTIVE
+EP-008,GET,/admissions/drafts,admissions.drafts.index,web;auth;permission:view admissions,200,Yes,view admissions,none,text/html,ACTIVE
+EP-009,GET,/admissions/create,admissions.create,web;auth;permission:view admissions,200,Yes,view admissions,none,text/html,ACTIVE
+EP-010,POST,/admissions/enquiry,admissions.enquiry.store,web;auth;permission:view admissions,302,Yes,view admissions,none,redirect,ACTIVE
+EP-011,GET,/students,students.index,web;auth;permission:view students,200,Yes,view students,none,text/html,ACTIVE
+EP-012,GET,/students/create,students.create,web;auth;permission:create students,200,Yes,create students,none,text/html,ACTIVE
+EP-013,GET,/academics,academics.index,web;auth;permission:view academics,200,Yes,view academics,none,text/html,ACTIVE
+EP-014,GET,/academics/terms,academics.terms,web;auth;permission:view academics,200,Yes,view academics,none,text/html,ACTIVE
+EP-015,GET,/classes,classes.index,web;auth;permission:view academics,200,Yes,view academics,none,text/html,ACTIVE
+EP-016,GET,/staff-timetable,staff-timetable.index,web;auth;permission:view academics,200,Yes,view academics,none,text/html,ACTIVE
+EP-017,GET,/attendance,attendance.index,web;auth;permission:view attendance,200,Yes,view attendance,none,text/html,ACTIVE
+EP-018,GET,/attendance/mark,attendance.mark,web;auth;permission:edit attendance,200,Yes,edit attendance,none,text/html,ACTIVE
+EP-019,GET,/examinations,examinations.index,web;auth;permission:view exams,200,Yes,view exams,none,text/html,ACTIVE
+EP-020,GET,/fees,fees.index,web;auth;permission:view fees,200,Yes,view fees,none,text/html,ACTIVE
+EP-021,GET,/fees/structure,fees.structure,web;auth;permission:view fees,200,Yes,view fees,none,text/html,ACTIVE
+EP-022,GET,/expenses,expenses.index,web;auth;permission:view expenses,200,Yes,view expenses,none,text/html,ACTIVE
+EP-023,GET,/accounts,accounts.index,web;auth;permission:view finance,200,Yes,view finance,none,text/html,ACTIVE
+EP-024,GET,/hr/employees,hr.employees,web;auth;permission:view employees,200,Yes,view employees,none,text/html,ACTIVE
+EP-025,GET,/hr/leave-approvals,hr.leave-approvals,web;auth;permission:view employees,200,Yes,view employees,none,text/html,ACTIVE
+EP-026,GET,/library/books,library.books,web;auth;permission:view library,200,Yes,view library,none,text/html,ACTIVE
+EP-027,GET,/transport/routes,transport.routes,web;auth;permission:view transport,200,Yes,view transport,none,text/html,ACTIVE
+EP-028,GET,/gate,gate.index,web;auth;permission:view visitors,200,Yes,view visitors,none,text/html,ACTIVE
+EP-029,GET,/reports/general-register,reports.general-register,web;auth;permission:view reports,200,Yes,view reports,none,text/html,ACTIVE
+EP-030,GET,/reports/fee-collection-register,reports.fee-collection-register,web;auth;permission:view reports,200,Yes,view reports,none,text/html,ACTIVE
+EP-031,GET,/warehouse,warehouse.index,web;auth;permission:view inventory,200,Yes,view inventory,none,text/html,ACTIVE
+EP-032,GET,/events/calendar,events.calendar,web;auth;permission:view events,200,Yes,view events,none,text/html,ACTIVE
+EP-033,GET,/activities/calendar,activities.calendar,web;auth,200,Yes,none,none,text/html,ACTIVE
+EP-034,GET,/circulars,circulars.index,web;auth,200,Yes,none,none,text/html,ACTIVE
+EP-035,GET,/settings,settings.index,web;auth;permission:manage settings,200,Yes,manage settings,none,text/html,ACTIVE
+EP-036,GET,/hostel,hostel.index,web;auth;hostel.enabled,302,Yes,view hostel,none,redirect,DISABLED_MODULE
+EP-037,GET,/lms,lms.index,web;auth;lms.enabled,302,Yes,view lms,none,redirect,DISABLED_MODULE
+EP-038,GET,/communication,communication.index,web;auth;communication.enabled,302,Yes,send email,none,redirect,DISABLED_MODULE
+EP-039,GET,/alumni,alumni.index,web;auth;alumni.enabled,302,Yes,view alumni,none,redirect,DISABLED_MODULE
+EP-040,GET,/pay/fee/{classId},public.fee.pay,web,200,No,none,none,text/html,ACTIVE
+EP-041,GET,/enquiry,enquiry.form,web,200,No,none,none,text/html,ACTIVE
+EP-042,POST,/enquiry,enquiry.submit,web;throttle:10,1,302,No,none,10/min,redirect,ACTIVE
+EP-043,GET,/gate/verify/{token},gate.verify,web,404,No,none,none,text/html,ACTIVE
+EP-044,GET,/verify-id-card/{token},id-cards.verify,web;throttle:60,1,404,No,none,60/min,text/html,ACTIVE
+EP-045,GET,/admissions/print-form,admissions.print-form,web;auth;permission:view admissions,200,Yes,view admissions,none,application/pdf,ACTIVE
+EP-046,GET,/admissions/fee-structure/{classId}/print,admissions.fee-structure.print,web;auth;permission:view admissions,200,Yes,view admissions,none,text/html,ACTIVE
+EP-047,GET,/api/notices,api.notices.index,web;auth,200,Yes,none,none,application/json,ACTIVE
+EP-048,GET,/api/circulars,api.circulars.index,web;auth,200,Yes,none,none,application/json,ACTIVE
+EP-049,GET,/api/events,api.events.index,web;auth,200,Yes,none,none,application/json,ACTIVE
+EP-050,GET,/api/meetings,api.meetings.index,web;auth,200,Yes,none,none,application/json,ACTIVE
+EP-051,GET,/api/tasks,api.tasks.index,web;auth,200,Yes,none,none,application/json,ACTIVE
+EP-052,GET,/api/calendar/activities,api.calendar.activities,web;auth,200,Yes,none,none,application/json,ACTIVE
+EP-053,GET,/api/notifications/unread-count,api.notifications.unread-count,web;auth,200,Yes,none,none,application/json,ACTIVE
+EP-054,GET,/api/dashboard/my-activities,api.dashboard.my-activities,web;auth,200,Yes,none,none,application/json,ACTIVE
+EP-055,PATCH,/api/notices/{id},api.notices.update,"web,auth",200,Yes,none,none,application/json,ACTIVE
+EP-056,POST,/api/notices/{id}/acknowledge,api.notices.acknowledge,"web,auth",200,Yes,none,none,application/json,ACTIVE
+EP-057,GET,/api/calendar/conflicts,api.calendar.conflicts,"web,auth",200,Yes,none,none,application/json,BUGGY_500
+EP-058,GET,/api/dashboard/management-summary,api.dashboard.mgmt_summary,"web,auth",200,Yes,none,none,application/json,ACTIVE
+EP-059,GET,/api/sections,api.sections,"web,auth",200,Yes,none,none,application/json,ACTIVE
+EP-060,GET,/api/warehouse/kit/{classId},api.warehouse.kit,"web,auth",200,Yes,none,none,application/json,ACTIVE
+EP-061,POST,/admissions/draft/save,admissions.draft.save,"web,auth",200,Yes,none,none,application/json,ACTIVE
+EP-062,GET,/admissions/draft/check-active,admissions.draft.check,"web,auth",200,Yes,none,none,application/json,ACTIVE
+EP-063,GET,/admissions/sibling-lookup,admissions.sibling.lookup,"web,auth",200,Yes,none,none,application/json,ACTIVE

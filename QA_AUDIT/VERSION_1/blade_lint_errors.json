@@ -1,0 +1,22 @@
+[
+    {
+        "file": "academics\/allocation-history.blade.php",
+        "error": "PHP Parse error:  syntax error, unexpected token \"<\" in C:\\Users\\jeyaw\\AppData\\Local\\Temp\\blaE74A.tmp on line 80\n\nParse error: syntax error, unexpected token \"<\" in C:\\Users\\jeyaw\\AppData\\Local\\Temp\\blaE74A.tmp on line 80\nErrors parsing C:\\Users\\jeyaw\\AppData\\Local\\Temp\\blaE74A.tmp"
+    },
+    {
+        "file": "academics\/teacher-timetable.blade.php",
+        "error": "PHP Parse error:  Unclosed '[' on line 395 does not match ')' in C:\\Users\\jeyaw\\AppData\\Local\\Temp\\blaE74A.tmp on line 396\n\nParse error: Unclosed '[' on line 395 does not match ')' in C:\\Users\\jeyaw\\AppData\\Local\\Temp\\blaE74A.tmp on line 396\nErrors parsing C:\\Users\\jeyaw\\AppData\\Local\\Temp\\blaE74A.tmp"
+    },
+    {
+        "file": "fees\/reminder-config.blade.php",
+        "error": "PHP Parse error:  Unclosed '(' does not match '}' in C:\\Users\\jeyaw\\AppData\\Local\\Temp\\blaE74A.tmp on line 56\n\nParse error: Unclosed '(' does not match '}' in C:\\Users\\jeyaw\\AppData\\Local\\Temp\\blaE74A.tmp on line 56\nErrors parsing C:\\Users\\jeyaw\\AppData\\Local\\Temp\\blaE74A.tmp"
+    },
+    {
+        "file": "hr\/challan.blade.php",
+        "error": "PHP Parse error:  syntax error, unexpected token \"elseif\" in C:\\Users\\jeyaw\\AppData\\Local\\Temp\\blaE74A.tmp on line 78\n\nParse error: syntax error, unexpected token \"elseif\" in C:\\Users\\jeyaw\\AppData\\Local\\Temp\\blaE74A.tmp on line 78\nErrors parsing C:\\Users\\jeyaw\\AppData\\Local\\Temp\\blaE74A.tmp"
+    },
+    {
+        "file": "settings\/notification-templates.blade.php",
+        "error": "PHP Parse error:  Unclosed '(' does not match '}' in C:\\Users\\jeyaw\\AppData\\Local\\Temp\\blaE74A.tmp on line 14\n\nParse error: Unclosed '(' does not match '}' in C:\\Users\\jeyaw\\AppData\\Local\\Temp\\blaE74A.tmp on line 14\nErrors parsing C:\\Users\\jeyaw\\AppData\\Local\\Temp\\blaE74A.tmp"
+    }
+]

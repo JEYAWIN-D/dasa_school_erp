@@ -1,0 +1,67 @@
+{
+    "BUG-SEC-001": {
+        "title": "Settings Privilege Escalation Gate",
+        "status": "PASS",
+        "detail": "HTTP 403 (Expected 403 Forbidden)"
+    },
+    "BUG-SEC-002": {
+        "title": "Stored XSS HTML Sanitization",
+        "status": "PASS",
+        "detail": "Scripts and on* handlers stripped"
+    },
+    "BUG-SEC-003": {
+        "title": "Windows Shell Command Password Decoupling",
+        "status": "PASS",
+        "detail": "Environment variable putenv() decoupled from shell command"
+    },
+    "BUG-SEC-004": {
+        "title": "Public Fee Checkout Route Rate Limiting",
+        "status": "PASS",
+        "detail": "throttle:15,1 middleware active on public route"
+    },
+    "BUG-FUNC-001": {
+        "title": "Non-Numeric Route Collision Integer Constraint",
+        "status": "PASS",
+        "detail": "HTTP 404 (Expected 404 cleanly, no 500 crash)"
+    },
+    "BUG-FUNC-002": {
+        "title": "Student Directory Query Optimization",
+        "status": "PASS",
+        "detail": "Consolidated into single SELECT COUNT(*) FILTER query"
+    },
+    "BUG-API-001": {
+        "title": "Calendar Conflicts Schema & SQL Resolution",
+        "status": "PASS",
+        "detail": "HTTP 200 (Expected 200 OK without 500 crash)"
+    },
+    "BUG-UI-001": {
+        "title": "Allocation History HTML in echo fix",
+        "status": "PASS",
+        "detail": "Blade view compiles and passes php -l cleanly"
+    },
+    "BUG-UI-002": {
+        "title": "Teacher Timetable @json truncation fix",
+        "status": "PASS",
+        "detail": "Blade view compiles and passes php -l cleanly"
+    },
+    "BUG-UI-003": {
+        "title": "Fee Reminder @{{}} placeholder fix",
+        "status": "PASS",
+        "detail": "Blade view compiles and passes php -l cleanly"
+    },
+    "BUG-UI-004": {
+        "title": "HR Challan @foreach control flow fix",
+        "status": "PASS",
+        "detail": "Blade view compiles and passes php -l cleanly"
+    },
+    "BUG-UI-005": {
+        "title": "Notification Template @{{}} placeholder fix",
+        "status": "PASS",
+        "detail": "Blade view compiles and passes php -l cleanly"
+    },
+    "BUG-CHAOS-001": {
+        "title": "Admission Draft Auto-Save Idempotency Replay Guard",
+        "status": "PASS",
+        "detail": "Reused exact draft_id (228 == 228)"
+    }
+}
