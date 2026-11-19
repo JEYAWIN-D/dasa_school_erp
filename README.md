@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DC Innovision — School ERP
 
 A full-featured School ERP built with Laravel 12, Tailwind CSS v3 and Alpine.js. Covers 10 core modules: Admissions, Students, Academics, Attendance, Examinations, Fees, HR & Payroll, Library, Transport and Hostel.
@@ -317,3 +318,6 @@ FILESYSTEM_DISK=local
 ---
 
 *DC Innovision Pvt Ltd — School ERP v1.0 — June 2026*
+=======
+# dasa_school_erp
+>>>>>>> cd6764131d72ce424aa10525d8122ead16588174
